@@ -41,10 +41,10 @@ class FlowRepository implements FlowRepositoryInterface
             (
                 SELECT
                     u.cohort,
-                    IFNULL(SUM(u. OFFSET = 0), 0) w1,
-                    IFNULL(SUM(u. OFFSET = 1), 0) w2,
-                    IFNULL(SUM(u. OFFSET = 2), 0) w3,
-                    IFNULL(SUM(u. OFFSET = 3), 0) w4
+                    IFNULL(SUM(u. OFFSET = 1), 0) w1,
+                    IFNULL(SUM(u. OFFSET = 2), 0) w2,
+                    IFNULL(SUM(u. OFFSET = 3), 0) w3,
+                    IFNULL(SUM(u. OFFSET = 4), 0) w4
                 FROM
                     (
                         SELECT
