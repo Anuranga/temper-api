@@ -1,13 +1,13 @@
 <?php declare(strict_types = 1);
 
-namespace Manager\Domain\UseCases\FlowViewer;
+namespace tests\Manager\Domain\UseCases\FlowViewer;
 
 use Manager\Domain\Entities\FlowGraphCreator;
 use Manager\Domain\Boundary\Repositories\FlowRepositoryInterface as FlowRepository;
 use Illuminate\Support\Collection;
 use Manager\Domain\UseCases\FlowViewer\GraphCreateException;
 
-class GraphCreate
+class GraphCreateTest
 {
     /**
      * @var FlowRepository
@@ -15,6 +15,7 @@ class GraphCreate
     private $flowRepository;
 
     /**
+     * Mockery
      * GraphCreate constructor.
      * @param FlowRepository $flowRepository
      */
